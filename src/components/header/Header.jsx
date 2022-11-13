@@ -49,7 +49,7 @@ function Header() {
         type="button"
         onClick={() => handleLike()}
       >
-        <MenuIcon size="35" />
+        <MenuIcon size="35" style={{ color: 'white', marginLeft: '70px' }} />
       </Button>
 
       <LinksContainer>
@@ -85,7 +85,20 @@ function Header() {
             }}
             to="/"
           >
-            Login
+            Aulas
+          </Link>
+        </div>
+
+        <div style={{ marginLeft: '42px' }}>
+          <Link
+            style={{
+              textDecoration: 'none', fontFamily: 'Roboto 400',
+              color: 'white',
+              fontSize: '15px'
+            }}
+            to="/"
+          >
+            Professores
           </Link>
         </div>
 

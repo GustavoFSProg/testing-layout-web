@@ -1,20 +1,19 @@
 import styled from 'styled-components'
 
-export const Container = styled.div`
+export const ContainerApp = styled.div`
+
   display: flex;
-  align-items: center;
-  justify-content: left;
+  /* align-items: center; */
+  justify-content: flex-start;
   /* background: #f2f2f2; */
-  background: #0059b3;
-  width: 100%;
-  height: 10rem;
+  width: 100vw;
+  height: 100%;
   border-bottom: solid 1px #b3b3b3;
-  padding-top: 4px;
   padding-bottom: 3.2px;
 
   @media screen and (max-width: 800px) {
     padding-bottom: 9px;
-
+    width: 100vw;
 
   }
 `
@@ -127,7 +126,7 @@ export const ImgLogo = styled.img`
       width: 110px;
 
     height: 52px;
-    margin-left: 20px;
+    margin-left: 10px;
   }
 `
 
