@@ -48,8 +48,10 @@ function Header() {
         onMouseLeave={() => handleDismissButtonClicked()}
         type="button"
         onClick={() => handleLike()}
+
+        style={{ marginLeft: '50px' }}
       >
-        <MenuIcon size="35" style={{ color: 'white', marginLeft: '70px' }} />
+        <MenuIcon size="35" style={{ color: 'white' }} />
       </Button>
 
       <LinksContainer>
