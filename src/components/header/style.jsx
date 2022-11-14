@@ -57,7 +57,7 @@ export const LinksContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-around;
-  margin-left: -345px;
+  margin-left: -732px;
   margin-top: 84px;
   letter-spacing: 1px ;
 
@@ -158,11 +158,14 @@ export const MenuButton = styled.button`
 export const ImgLogo = styled.img`
   width: 150px;
   height: 70px;
-  margin-left: 90px;
+  margin-left: -297px;
+  margin-top: 15px;
 
 
   @media screen and (max-width: 800px) {
       width: 110px;
+  margin-top: 0px;
+
 
     height: 52px;
     margin-left: 20px;
@@ -189,6 +192,17 @@ export const SpanLinksMenu = styled.span`
          background: #0059b3;
          color: orange;
 
+     }
+
+`
+
+export const SpanFones = styled.span`
+   margin-left: 150px;
+    margin-top: -40px;
+     font-size: 14px;
+
+     @media screen and (max-width: 700px){
+      display: none ;
      }
 
 `
