@@ -8,7 +8,7 @@ import {
   FormDois,
   MenuButton,
 } from './style'
-import logo from '../../assets/logo.jpeg'
+import logo from '../../assets/react.svg'
 import { BsSearch } from 'react-icons/bs'
 import { useState } from 'react'
 import MenuIcon from '@material-ui/icons/Menu'
@@ -73,6 +73,7 @@ function Header() {
             type="button"
             onClick={() => handleButton()}
           >
+
 
             Menu
           </MenuButton>
@@ -149,16 +150,16 @@ function Header() {
               display: 'flex'
             }}>
 
-              <span style={{ marginBottom: '6px', cursor: 'pointer' }}>
+              <span style={{ marginBottom: '7px', cursor: 'pointer' }}>
                 Aulas
             </span>
-              <span style={{ marginBottom: '6px', cursor: 'pointer' }}>
+              <span style={{ marginBottom: '7px', cursor: 'pointer' }}>
                 Cursos
             </span>
-              <span style={{ marginBottom: '6px', cursor: 'pointer' }}>
+              <span style={{ marginBottom: '7px', cursor: 'pointer' }}>
                 Professores
             </span>
-              <span style={{ marginBottom: '6px', cursor: 'pointer' }}>
+              <span style={{ marginBottom: '7px', cursor: 'pointer' }}>
                 Cadastro
               </span>
             </div>

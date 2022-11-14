@@ -130,10 +130,12 @@ export const MenuButton = styled.button`
     background: none;
     border: none;
     color: white;
+    
     /*   transition: ease 0.7s; */
-
+ 
     &:hover {
-      /* background: darkgray; */
+          border: none;
+
     }
 
   @media screen and (max-width: 800px) {
