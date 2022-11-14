@@ -43,16 +43,17 @@ function Header() {
 
   return (
     <Container>
+
       <div style={{
         display: 'flex', flexDirection: 'column',
         alignItems: 'center'
       }}>
-        {/* <span
+
+        <span
           style={{ marginLeft: '100px', marginTop: '-36px', fontSize: '14px' }}
         >
           (11) - 999666666 --  whats: (11) - 999666666
-        </span> */}
-
+        </span>
         <div style={{ display: 'flex', alignItems: 'center', marginTop: '0px', justifyContent: 'center' }}>
         <ImgLogo src={logo} alt="logo" />
       </div>
