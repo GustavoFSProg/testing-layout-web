@@ -141,7 +141,7 @@ function Header() {
               width: '150px', borderRadius: '5px',
               marginLeft: '-380px', flexDirection: 'column',
               display: 'flex', alignItems: 'left',
-              justifyContent: 'center', height: '170px', background: '#0059b3',
+              justifyContent: 'center', height: '170px', background: '#004d99',
               marginTop: '230px'
             }}
           >
