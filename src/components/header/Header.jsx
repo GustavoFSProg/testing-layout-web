@@ -7,7 +7,7 @@ import {
   Input,
   FormDois,
   MenuButton,
-  SpanLinksMenu
+  SpanLinksMenu,
 } from './style'
 import logo from '../../assets/react.svg'
 import { BsSearch } from 'react-icons/bs'
@@ -43,8 +43,19 @@ function Header() {
 
   return (
     <Container>
-      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+      <div style={{
+        display: 'flex', flexDirection: 'column',
+        alignItems: 'center'
+      }}>
+        {/* <span
+          style={{ marginLeft: '100px', marginTop: '-36px', fontSize: '14px' }}
+        >
+          (11) - 999666666 --  whats: (11) - 999666666
+        </span> */}
+
+        <div style={{ display: 'flex', alignItems: 'center', marginTop: '0px', justifyContent: 'center' }}>
         <ImgLogo src={logo} alt="logo" />
+      </div>
       </div>
       <div
         style={{
@@ -63,19 +74,13 @@ function Header() {
       </Button>
 
       <LinksContainer>
-
         <div style={{ marginLeft: '40px' }}>
           {/* <Link to="/" style={{
             textDecoration: 'none', fontFamily: 'Roboto 400',
             color: 'white',
             fontSize: '15px'
           }}> */}
-          <MenuButton
-            type="button"
-            onClick={() => handleButton()}
-          >
-
-
+          <MenuButton type="button" onClick={() => handleButton()}>
             Menu
           </MenuButton>
 
@@ -139,32 +144,32 @@ function Header() {
           <div
             onMouseLeave={() => handleDismissClicked()}
             style={{
-              width: '150px', borderRadius: '5px',
-              marginLeft: '-380px', flexDirection: 'column',
-              display: 'flex', alignItems: 'left',
-              justifyContent: 'center', height: '170px', background: '#004d99',
-              marginTop: '230px'
+              width: '150px',
+              borderRadius: '5px',
+              marginLeft: '-380px',
+              flexDirection: 'column',
+              display: 'flex',
+              alignItems: 'left',
+              justifyContent: 'center',
+              height: '170px',
+              background: '#004d99',
+              marginTop: '230px',
             }}
           >
-            <div style={{
-              marginLeft: '25px', flexDirection: 'column',
-              display: 'flex'
-            }}>
-
-              <SpanLinksMenu onClick={() => alert("Clicou em Aulas")}>
-                Aulas
-              </SpanLinksMenu>
-              <SpanLinksMenu onClick={() => alert("Clicou em  Cursos")}>
-                Cursos
-              </SpanLinksMenu>
-              <SpanLinksMenu onClick={() => alert("Clicou em  Professores")}>
+            <div
+              style={{
+                marginLeft: '25px',
+                flexDirection: 'column',
+                display: 'flex',
+              }}
+            >
+              <SpanLinksMenu onClick={() => alert('Clicou em Aulas')}>Aulas</SpanLinksMenu>
+              <SpanLinksMenu onClick={() => alert('Clicou em  Cursos')}>Cursos</SpanLinksMenu>
+              <SpanLinksMenu onClick={() => alert('Clicou em  Professores')}>
                 Professores
               </SpanLinksMenu>
-              <SpanLinksMenu onClick={() => alert("Clicou em Cadastro")}>
-                Cadastro
-              </SpanLinksMenu>
+              <SpanLinksMenu onClick={() => alert('Clicou em Cadastro')}>Cadastro</SpanLinksMenu>
             </div>
-
           </div>
         ) : (
           <p></p>
