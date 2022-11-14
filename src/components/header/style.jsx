@@ -12,7 +12,7 @@ export const Container = styled.div`
   padding-top: 4px;
   padding-bottom: 3.2px;
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 900px) {
     padding-bottom: 9px;
   height: 5rem;
 
@@ -57,12 +57,12 @@ export const LinksContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-around;
-  margin-left: -345px;
+  margin-left: -732px;
   margin-top: 84px;
   letter-spacing: 1px ;
 
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 900px) {
     display: none;
     /* width: 20px; */
   }
@@ -100,7 +100,7 @@ export const Input = styled.input`
 export const Button = styled.button`
   display: none;
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 900px) {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -158,11 +158,14 @@ export const MenuButton = styled.button`
 export const ImgLogo = styled.img`
   width: 150px;
   height: 70px;
-  margin-left: 90px;
+  margin-left: -297px;
+  margin-top: 15px;
 
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 900px) {
       width: 110px;
+  margin-top: 0px;
+
 
     height: 52px;
     margin-left: 20px;
@@ -172,7 +175,7 @@ export const ImgLogo = styled.img`
 export const ImgLupa = styled.img`
   width: 32px;
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 900px) {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -189,6 +192,19 @@ export const SpanLinksMenu = styled.span`
          background: #0059b3;
          color: orange;
 
+     }
+
+     
+
+`
+
+export const SpanFones = styled.span`
+   margin-left: 150px;
+    margin-top: -40px;
+     font-size: 14px;
+
+     @media screen and (max-width: 900px){
+      display: none ;
      }
 
 `

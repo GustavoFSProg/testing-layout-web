@@ -8,6 +8,7 @@ import {
   FormDois,
   MenuButton,
   SpanLinksMenu,
+  SpanFones,
 } from './style'
 import logo from '../../assets/react.svg'
 import { BsSearch } from 'react-icons/bs'
@@ -43,19 +44,19 @@ function Header() {
 
   return (
     <Container>
-      <div style={{
-        display: 'flex', flexDirection: 'column',
-        alignItems: 'center'
-      }}>
-        {/* <span
-          style={{ marginLeft: '100px', marginTop: '-36px', fontSize: '14px' }}
-        >
-          (11) - 999666666 --  whats: (11) - 999666666
-        </span> */}
-
-        <div style={{ display: 'flex', alignItems: 'center', marginTop: '0px', justifyContent: 'center' }}>
+      <div
+        style={{
+          display: 'flex',
+          alignItems: 'center',
+          marginTop: '0px',
+          justifyContent: 'center',
+          flexDirection: 'column',
+        }}
+      >
+        <SpanFones>
+          Fone: (11) - 999666666 -- Whats: (11) - 999666666 -- email: ggg@gmail.com
+        </SpanFones>
         <ImgLogo src={logo} alt="logo" />
-      </div>
       </div>
       <div
         style={{
