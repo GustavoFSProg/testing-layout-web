@@ -30,7 +30,6 @@ export const Form = styled.form`
     display: none;
   }
 `
-
 export const FormDois = styled.form`
   display: flex;
   align-items: center;
@@ -119,6 +118,42 @@ export const Button = styled.button`
     }
   }
 `
+
+export const MenuButton = styled.button`
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 38px;
+    margin-left: 3px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: white;
+    /*   transition: ease 0.7s; */
+
+    &:hover {
+      /* background: darkgray; */
+    }
+
+  @media screen and (max-width: 800px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 38px;
+    margin-left: 3px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    /*   transition: ease 0.7s; */
+
+    &:hover {
+      /* background: darkgray; */
+    }
+  }
+`
+
 export const ImgLogo = styled.img`
   width: 150px;
   height: 70px;

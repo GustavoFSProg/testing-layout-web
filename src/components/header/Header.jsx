@@ -6,7 +6,7 @@ import {
   Button,
   Input,
   FormDois,
-  Form,
+  MenuButton,
 } from './style'
 import logo from '../../assets/logo.jpeg'
 import { BsSearch } from 'react-icons/bs'
@@ -16,6 +16,7 @@ import { Link } from 'react-router-dom'
 
 function Header() {
   const [isButtonClicked, setIsButtonClicked] = useState('none')
+  const [isClicked, setIsClicked] = useState()
 
   function handleLogout() {
     localStorage.clear()
@@ -27,15 +28,22 @@ function Header() {
     setIsButtonClicked('flex')
   }
 
+  function handleButton() {
+    setIsClicked(true)
+  }
+
   function handleDismissButtonClicked() {
     setIsButtonClicked('none')
+  }
+
+  function handleDismissClicked() {
+    setIsClicked(false)
   }
 
   return (
     <Container>
       <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
         <ImgLogo src={logo} alt="logo" />
-     
       </div>
       <div
         style={{
@@ -48,30 +56,38 @@ function Header() {
         onMouseLeave={() => handleDismissButtonClicked()}
         type="button"
         onClick={() => handleLike()}
-
         style={{ marginLeft: '50px' }}
       >
         <MenuIcon size="35" style={{ color: 'white' }} />
       </Button>
 
       <LinksContainer>
+
         <div style={{ marginLeft: '40px' }}>
-          <Link to="/" style={{
+          {/* <Link to="/" style={{
             textDecoration: 'none', fontFamily: 'Roboto 400',
             color: 'white',
             fontSize: '15px'
-          }}>
+          }}> */}
+          <MenuButton
+            type="button"
+            onClick={() => handleButton()}
+          >
+
             Home
-          </Link>
+          </MenuButton>
+
+          {/* </Link>\ */}
         </div>
 
         <div style={{ marginLeft: '42px' }}>
           <Link
             style={{
-              textDecoration: 'none', fontFamily: 'Roboto 400',
+              textDecoration: 'none',
+              fontFamily: 'Roboto 400',
               color: 'white',
-              fontSize: '15px'
-}}
+              fontSize: '15px',
+            }}
             to="/"
           >
             Curso
@@ -81,9 +97,10 @@ function Header() {
         <div style={{ marginLeft: '42px' }}>
           <Link
             style={{
-              textDecoration: 'none', fontFamily: 'Roboto 400',
+              textDecoration: 'none',
+              fontFamily: 'Roboto 400',
               color: 'white',
-              fontSize: '15px'
+              fontSize: '15px',
             }}
             to="/"
           >
@@ -94,9 +111,10 @@ function Header() {
         <div style={{ marginLeft: '42px' }}>
           <Link
             style={{
-              textDecoration: 'none', fontFamily: 'Roboto 400',
+              textDecoration: 'none',
+              fontFamily: 'Roboto 400',
               color: 'white',
-              fontSize: '15px'
+              fontSize: '15px',
             }}
             to="/"
           >
@@ -115,6 +133,34 @@ function Header() {
             LOGOUT
           </Link> */}
         </div>
+        {isClicked === true ? (
+          <div
+            onMouseLeave={() => handleDismissClicked()}
+            style={{
+              width: '150px', borderRadius: '5px',
+              marginLeft: '-380px', flexDirection: 'column',
+              display: 'flex', alignItems: 'center',
+              justifyContent: 'center', height: '170px', background: '#0059b3',
+              marginTop: '230px'
+            }}
+          >
+
+            <span style={{ marginBottom: '5px' }}>
+              ABRIU
+            </span>
+            <span style={{ marginBottom: '5px' }}>
+              ABRIU
+            </span>
+            <span style={{ marginBottom: '5px' }}>
+              ABRIU
+            </span>
+            <span style={{ marginBottom: '5px' }}>
+              ABRIU
+            </span>
+          </div>
+        ) : (
+          <p></p>
+        )}
       </LinksContainer>
       {/* <div style={{ display: 'flex', flexDirection: 'center' }}> */}
 
