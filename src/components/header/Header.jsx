@@ -7,6 +7,7 @@ import {
   Input,
   FormDois,
   MenuButton,
+  SpanLinksMenu
 } from './style'
 import logo from '../../assets/react.svg'
 import { BsSearch } from 'react-icons/bs'
@@ -150,18 +151,18 @@ function Header() {
               display: 'flex'
             }}>
 
-              <span style={{ marginBottom: '7px', cursor: 'pointer' }}>
+              <SpanLinksMenu onClick={() => alert("Clicou em Aulas")}>
                 Aulas
-            </span>
-              <span style={{ marginBottom: '7px', cursor: 'pointer' }}>
+              </SpanLinksMenu>
+              <SpanLinksMenu onClick={() => alert("Clicou em  Cursos")}>
                 Cursos
-            </span>
-              <span style={{ marginBottom: '7px', cursor: 'pointer' }}>
+              </SpanLinksMenu>
+              <SpanLinksMenu onClick={() => alert("Clicou em  Professores")}>
                 Professores
-            </span>
-              <span style={{ marginBottom: '7px', cursor: 'pointer' }}>
+              </SpanLinksMenu>
+              <SpanLinksMenu onClick={() => alert("Clicou em Cadastro")}>
                 Cadastro
-              </span>
+              </SpanLinksMenu>
             </div>
 
           </div>

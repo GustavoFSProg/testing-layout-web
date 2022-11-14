@@ -17,7 +17,6 @@ export const Container = styled.div`
   height: 5rem;
 
 
-
   }
 `
 export const Form = styled.form`
@@ -180,4 +179,16 @@ export const ImgLupa = styled.img`
     margin-top: 15px;
     z-index: 9999;
   }
+`
+export const SpanLinksMenu = styled.span`
+    margin-bottom: 7px;
+     cursor: pointer;
+     transition: ease 0.4s;
+
+     &:hover{
+         background: #0059b3;
+         color: orange;
+
+     }
+
 `
