@@ -74,7 +74,7 @@ function Header() {
             onClick={() => handleButton()}
           >
 
-            Home
+            Menu
           </MenuButton>
 
           {/* </Link>\ */}
@@ -139,24 +139,30 @@ function Header() {
             style={{
               width: '150px', borderRadius: '5px',
               marginLeft: '-380px', flexDirection: 'column',
-              display: 'flex', alignItems: 'center',
+              display: 'flex', alignItems: 'left',
               justifyContent: 'center', height: '170px', background: '#0059b3',
               marginTop: '230px'
             }}
           >
+            <div style={{
+              marginLeft: '25px', flexDirection: 'column',
+              display: 'flex'
+            }}>
 
-            <span style={{ marginBottom: '5px' }}>
-              ABRIU
+              <span style={{ marginBottom: '6px', cursor: 'pointer' }}>
+                Aulas
             </span>
-            <span style={{ marginBottom: '5px' }}>
-              ABRIU
+              <span style={{ marginBottom: '6px', cursor: 'pointer' }}>
+                Cursos
             </span>
-            <span style={{ marginBottom: '5px' }}>
-              ABRIU
+              <span style={{ marginBottom: '6px', cursor: 'pointer' }}>
+                Professores
             </span>
-            <span style={{ marginBottom: '5px' }}>
-              ABRIU
-            </span>
+              <span style={{ marginBottom: '6px', cursor: 'pointer' }}>
+                Cadastro
+              </span>
+            </div>
+
           </div>
         ) : (
           <p></p>
