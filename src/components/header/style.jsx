@@ -12,7 +12,7 @@ export const Container = styled.div`
   padding-top: 4px;
   padding-bottom: 3.2px;
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 900px) {
     padding-bottom: 9px;
   height: 5rem;
 
@@ -62,7 +62,7 @@ export const LinksContainer = styled.div`
   letter-spacing: 1px ;
 
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 900px) {
     display: none;
     /* width: 20px; */
   }
@@ -100,7 +100,7 @@ export const Input = styled.input`
 export const Button = styled.button`
   display: none;
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 900px) {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -162,7 +162,7 @@ export const ImgLogo = styled.img`
   margin-top: 15px;
 
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 900px) {
       width: 110px;
   margin-top: 0px;
 
@@ -175,7 +175,7 @@ export const ImgLogo = styled.img`
 export const ImgLupa = styled.img`
   width: 32px;
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 900px) {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -194,6 +194,8 @@ export const SpanLinksMenu = styled.span`
 
      }
 
+     
+
 `
 
 export const SpanFones = styled.span`
@@ -201,7 +203,7 @@ export const SpanFones = styled.span`
     margin-top: -40px;
      font-size: 14px;
 
-     @media screen and (max-width: 700px){
+     @media screen and (max-width: 900px){
       display: none ;
      }
 
