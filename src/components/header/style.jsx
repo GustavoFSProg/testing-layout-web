@@ -14,9 +14,7 @@ export const Container = styled.div`
 
   @media screen and (max-width: 900px) {
     padding-bottom: 9px;
-  height: 5rem;
-
-
+    height: 5rem;
   }
 `
 export const Form = styled.form`
@@ -32,7 +30,7 @@ export const Form = styled.form`
 export const FormDois = styled.form`
   display: flex;
   align-items: center;
-  flex-direction: column ;
+  flex-direction: column;
   justify-content: space-between;
   z-index: 9999;
   background: linear-gradient(to right top, #8c8c8c 55%, #4d4d4d 45%);
@@ -45,12 +43,10 @@ export const FormDois = styled.form`
   padding-right: 3px;
   padding-bottom: 9px;
 
-
   @media screen and (max-width: 800px) {
-      width: 90%;
-      margin-top: 10px;
+    width: 90%;
+    margin-top: 10px;
   }
-
 `
 
 export const LinksContainer = styled.div`
@@ -59,8 +55,7 @@ export const LinksContainer = styled.div`
   justify-content: space-around;
   margin-left: -732px;
   margin-top: 84px;
-  letter-spacing: 1px ;
-
+  letter-spacing: 1px;
 
   @media screen and (max-width: 900px) {
     display: none;
@@ -76,7 +71,7 @@ export const LinksContainerMobile = styled.div`
     align-items: center;
     justify-content: center;
     padding-right: 15px;
-    font-size:  0.9rem;
+    font-size: 0.9rem;
   }
 `
 export const Input = styled.input`
@@ -120,22 +115,21 @@ export const Button = styled.button`
 
 export const MenuButton = styled.button`
   display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 40px;
-    height: 38px;
-    margin-left: 3px;
-    cursor: pointer;
-    background: none;
-    border: none;
-    color: white;
-    
-    /*   transition: ease 0.7s; */
- 
-    &:hover {
-          border: none;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 38px;
+  margin-left: 3px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: white;
 
-    }
+  /*   transition: ease 0.7s; */
+
+  &:hover {
+    border: none;
+  }
 
   @media screen and (max-width: 800px) {
     display: flex;
@@ -161,11 +155,9 @@ export const ImgLogo = styled.img`
   margin-left: -297px;
   margin-top: 15px;
 
-
   @media screen and (max-width: 900px) {
-      width: 110px;
-  margin-top: 0px;
-
+    width: 110px;
+    margin-top: 0px;
 
     height: 52px;
     margin-left: 20px;
@@ -184,27 +176,45 @@ export const ImgLupa = styled.img`
   }
 `
 export const SpanLinksMenu = styled.span`
-    margin-bottom: 7px;
-     cursor: pointer;
-     transition: ease 0.4s;
+  margin-bottom: 7px;
+  cursor: pointer;
+  transition: ease 0.4s;
 
-     &:hover{
-         background: #0059b3;
-         color: orange;
-
-     }
-
-     
-
+  &:hover {
+    background: #0059b3;
+    color: orange;
+  }
 `
 
 export const SpanFones = styled.span`
-   margin-left: 150px;
-    margin-top: -40px;
-     font-size: 14px;
+  margin-left: 150px;
+  margin-top: -40px;
+  font-size: 14px;
 
-     @media screen and (max-width: 900px){
-      display: none ;
-     }
+  @media screen and (max-width: 900px) {
+    display: none;
+  }
+`
+
+
+
+export const HeaderOptions = styled.div`
+  
+margin-left: 42px;
+transition: ease 0.5s;
+
+&:hover{
+  color: orange
+}
+
+`
+
+export const HeaderSpan = styled.span`
+  
+transition: ease 0.5s;
+
+&:hover{
+  color: orange
+}
 
 `

@@ -9,6 +9,8 @@ import {
   MenuButton,
   SpanLinksMenu,
   SpanFones,
+  HeaderOptions,
+  HeaderSpan
 } from './style'
 import logo from '../../assets/react.svg'
 import { BsSearch } from 'react-icons/bs'
@@ -75,7 +77,7 @@ function Header() {
       </Button>
 
       <LinksContainer>
-        <div style={{ marginLeft: '40px' }}>
+        <HeaderOptions style={{ marginLeft: '40px' }}>
           {/* <Link to="/" style={{
             textDecoration: 'none', fontFamily: 'Roboto 400',
             color: 'white',
@@ -86,9 +88,9 @@ function Header() {
           </MenuButton>
 
           {/* </Link>\ */}
-        </div>
+        </HeaderOptions>
 
-        <div style={{ marginLeft: '42px' }}>
+        <HeaderOptions>
           <Link
             style={{
               textDecoration: 'none',
@@ -98,11 +100,13 @@ function Header() {
             }}
             to="/"
           >
+            <HeaderSpan >
             Curso
+            </HeaderSpan>
           </Link>
-        </div>
+        </HeaderOptions>
 
-        <div style={{ marginLeft: '42px' }}>
+        <HeaderOptions >
           <Link
             style={{
               textDecoration: 'none',
@@ -112,11 +116,13 @@ function Header() {
             }}
             to="/"
           >
-            Aulas
+            <HeaderSpan >
+              Aulas
+            </HeaderSpan>
           </Link>
-        </div>
+        </HeaderOptions>
 
-        <div style={{ marginLeft: '42px' }}>
+        <HeaderOptions >
           <Link
             style={{
               textDecoration: 'none',
@@ -126,9 +132,43 @@ function Header() {
             }}
             to="/"
           >
-            Professores
+            <HeaderSpan >
+              Professores
+            </HeaderSpan>
           </Link>
-        </div>
+        </HeaderOptions>
+
+        <HeaderOptions >
+          <Link
+            style={{
+              textDecoration: 'none',
+              fontFamily: 'Roboto 400',
+              color: 'white',
+              fontSize: '15px',
+            }}
+            to="/"
+          >
+            <HeaderSpan >
+              Sobre
+            </HeaderSpan>
+          </Link>
+        </HeaderOptions>
+
+        <HeaderOptions >
+          <Link
+            style={{
+              textDecoration: 'none',
+              fontFamily: 'Roboto 400',
+              color: 'white',
+              fontSize: '15px',
+            }}
+            to="/"
+          >
+            <HeaderSpan >
+              Valores
+            </HeaderSpan>
+          </Link>
+        </HeaderOptions>
 
         <div style={{ marginLeft: '35px' }}>
           {/* <Link
@@ -147,7 +187,7 @@ function Header() {
             style={{
               width: '150px',
               borderRadius: '5px',
-              marginLeft: '-380px',
+              marginLeft: '-565px',
               flexDirection: 'column',
               display: 'flex',
               alignItems: 'left',
