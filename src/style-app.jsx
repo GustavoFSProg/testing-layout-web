@@ -1,11 +1,12 @@
 import styled from 'styled-components'
+import Circulo from './assets/circulo.jpg'
 
-export const ContainerApp = styled.div`
-
+export const ContainerAppBackgroundImage = styled.div`
   display: flex;
-  /* align-items: center; */
-  justify-content: flex-start;
-  /* background: #f2f2f2; */
+  align-items: center;
+  justify-content: center;
+  background: url(${Circulo}) no-repeat fixed;
+background-size: cover ;
   width: 100vw;
   height: 100%;
   border-bottom: solid 1px #b3b3b3;
@@ -14,9 +15,27 @@ export const ContainerApp = styled.div`
   @media screen and (max-width: 800px) {
     padding-bottom: 9px;
     width: 100vw;
+background-size: contain ;
 
   }
 `
+
+export const ContainerApp = styled.div`
+  display: flex;
+
+  /* align-items: center; */
+  justify-content: flex-start;
+  width: 100vw;
+  height: 100%;
+  border-bottom: solid 1px #b3b3b3;
+  padding-bottom: 3.2px;
+
+  @media screen and (max-width: 800px) {
+    padding-bottom: 9px;
+    width: 100vw;
+  }
+`
+
 export const Form = styled.form`
   display: flex;
   margin-left: 13px;
@@ -31,7 +50,7 @@ export const Form = styled.form`
 export const FormDois = styled.form`
   display: flex;
   align-items: center;
-  flex-direction: column ;
+  flex-direction: column;
   justify-content: space-between;
   z-index: 9999;
   background: linear-gradient(to right top, #8c8c8c 55%, #4d4d4d 45%);
@@ -44,12 +63,10 @@ export const FormDois = styled.form`
   padding-right: 3px;
   padding-bottom: 9px;
 
-
   @media screen and (max-width: 800px) {
-      width: 90%;
-      margin-top: 10px;
+    width: 90%;
+    margin-top: 10px;
   }
-
 `
 
 export const LinksContainer = styled.div`
@@ -58,8 +75,7 @@ export const LinksContainer = styled.div`
   justify-content: space-around;
   margin-left: -345px;
   margin-top: 84px;
-  letter-spacing: 1px ;
-
+  letter-spacing: 1px;
 
   @media screen and (max-width: 800px) {
     display: none;
@@ -75,7 +91,7 @@ export const LinksContainerMobile = styled.div`
     align-items: center;
     justify-content: center;
     padding-right: 15px;
-    font-size:  0.9rem;
+    font-size: 0.9rem;
   }
 `
 export const Input = styled.input`
@@ -121,9 +137,8 @@ export const ImgLogo = styled.img`
   height: 70px;
   margin-left: 90px;
 
-
   @media screen and (max-width: 800px) {
-      width: 110px;
+    width: 110px;
 
     height: 52px;
     margin-left: 10px;
