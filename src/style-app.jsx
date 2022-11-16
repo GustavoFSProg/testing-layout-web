@@ -8,7 +8,7 @@ export const ContainerAppBackgroundImage = styled.div`
   background: url(${Circulo}) no-repeat fixed;
 background-size: cover ;
   width: 100vw;
-  height: 100%;
+  height: 100vh;
   border-bottom: solid 1px #b3b3b3;
   padding-bottom: 3.2px;
 
@@ -23,7 +23,6 @@ background-size: contain ;
 export const ContainerApp = styled.div`
   display: flex;
 
-  /* align-items: center; */
   justify-content: flex-start;
   width: 100vw;
   height: 100%;
