@@ -6,7 +6,7 @@ export const ContainerAppBackgroundImage = styled.div`
   align-items: center;
   justify-content: center;
   background: url(${Circulo}) no-repeat fixed;
-background-size: cover ;
+  background-size: cover;
   width: 100vw;
   height: 100vh;
   border-bottom: solid 1px #b3b3b3;
@@ -15,8 +15,7 @@ background-size: cover ;
   @media screen and (max-width: 800px) {
     padding-bottom: 9px;
     width: 100vw;
-background-size: contain ;
-
+    background-size: contain;
   }
 `
 
@@ -67,7 +66,6 @@ export const FormDois = styled.form`
     margin-top: 10px;
   }
 `
-
 export const LinksContainer = styled.div`
   display: flex;
   align-items: center;
@@ -153,5 +151,14 @@ export const ImgLupa = styled.img`
     justify-content: center;
     margin-top: 15px;
     z-index: 9999;
+  }
+`
+export const IFrameContainer = styled.div`
+  display: flex;
+  margin-left: 200px;
+
+  @media screen and (max-width: 800px) {
+    flex-direction: column;
+    margin-left: 50rem;
   }
 `

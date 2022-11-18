@@ -56,6 +56,8 @@ export const LinksContainer = styled.div`
   margin-left: -732px;
   margin-top: 84px;
   letter-spacing: 1px;
+  z-index: 9999;
+
 
   @media screen and (max-width: 900px) {
     display: none;
@@ -124,6 +126,7 @@ export const MenuButton = styled.button`
   background: none;
   border: none;
   color: white;
+  z-index: 9999;
 
   /*   transition: ease 0.7s; */
 
