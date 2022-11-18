@@ -6,6 +6,7 @@ import {
   Imagem,
   IFrameContainer,
   ContainerAppBackgroundImage,
+  HR,
 } from './style-app'
 
 function App() {
@@ -16,7 +17,6 @@ function App() {
         <ContainerApp>
           <IFrameContainer>
             <Imagem src={video} alt="YouTube video player" />
-
             <AulaContainer>
               <p
                 style={{
@@ -31,16 +31,8 @@ function App() {
                   marginTop: '20px',
                 }}
               >
-                {' '}
                 Agende uma aula demonstrativa nessa unidade.
-                <hr
-                  style={{
-                    borderTop: '1px solid black',
-                    width: '110%',
-                    height: '1px',
-                    // marginTop: '200px'
-                  }}
-                ></hr>
+                <HR></HR>
               </p>
             </AulaContainer>
           </IFrameContainer>

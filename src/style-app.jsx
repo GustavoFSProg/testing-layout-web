@@ -17,13 +17,15 @@ export const ContainerAppBackgroundImage = styled.div`
     padding-bottom: 9px;
     width: 100vw;
     background-size: contain;
+    background: #99dfff;
+
   }
 `
 
 export const ContainerApp = styled.div`
   display: flex;
 
-  justify-content: flex-start;
+  justify-content: center;
   width: 100%;
   height: 100%;
   border-bottom: solid 1px #b3b3b3;
@@ -32,6 +34,9 @@ export const ContainerApp = styled.div`
   @media screen and (max-width: 800px) {
     padding-bottom: 9px;
     width: 100vw;
+    align-items: center;
+
+
   }
 `
 
@@ -156,14 +161,16 @@ export const ImgLupa = styled.img`
 `
 export const IFrameContainer = styled.div`
   display: flex;
-  margin-left: 200px;
-  margin-top: -10px;
+    justify-content: center;
+
 
   @media screen and (max-width: 800px) {
     flex-direction: column;
-    margin-left: -9rem;
-    justify-content: center;
-    margin-top: -340px;
+    
+  margin-left: -165px;
+  margin-top: -380px;
+    align-items: center;
+display: flex;
   }
 `
 
@@ -175,8 +182,10 @@ export const Imagem = styled.img`
   height: 305px;
 
   @media screen and (max-width: 800px) {
-    width: 500px;
+    width: 300px;
     height: 170px;
+  margin-left: 160px;
+
   }
 `
 
@@ -190,17 +199,26 @@ export const AulaContainer = styled.div`
   margin-top: 55px;
   height: 300px;
   width: 400px;
-  margin-left: 10px;
+  margin-left: 20px;
   opacity: 0.9;
 
   @media screen and (max-width: 800px) {
-    width: 240px;
+    width: 275px;
     height: 170px;
-   align-items:center ;
-  display: flex;
-  margin-left: 160px;
+    align-items: center;
+    display: flex;
 
+    margin-left: 160px;
+  }
+`
+export const HR = styled.hr`
+  border-top: 1px solid black;
+  width: 110%;
+  height: 1px;
 
+   @media screen and (max-width: 800px) {
+    width: 240px;
+      width: 80%;
 
   }
 `
