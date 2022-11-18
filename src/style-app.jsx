@@ -5,6 +5,7 @@ export const ContainerAppBackgroundImage = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  /* background: red; */
   background: url(${Circulo}) no-repeat fixed;
   background-size: cover;
   width: 100vw;
@@ -23,7 +24,7 @@ export const ContainerApp = styled.div`
   display: flex;
 
   justify-content: flex-start;
-  width: 100vw;
+  width: 100%;
   height: 100%;
   border-bottom: solid 1px #b3b3b3;
   padding-bottom: 3.2px;
@@ -156,9 +157,50 @@ export const ImgLupa = styled.img`
 export const IFrameContainer = styled.div`
   display: flex;
   margin-left: 200px;
+  margin-top: -10px;
 
   @media screen and (max-width: 800px) {
     flex-direction: column;
-    margin-left: 50rem;
+    margin-left: -9rem;
+    justify-content: center;
+    margin-top: -340px;
+  }
+`
+
+export const Imagem = styled.img`
+  display: flex;
+  margin-left: -70px;
+  margin-top: 50px;
+  width: 550px;
+  height: 305px;
+
+  @media screen and (max-width: 800px) {
+    width: 500px;
+    height: 170px;
+  }
+`
+
+export const AulaContainer = styled.div`
+  display: flex;
+  justify-content: center;
+
+  background: #f2f2f2;
+  border-radius: 10px;
+  font-size: 16px;
+  margin-top: 55px;
+  height: 300px;
+  width: 400px;
+  margin-left: 10px;
+  opacity: 0.9;
+
+  @media screen and (max-width: 800px) {
+    width: 240px;
+    height: 170px;
+   align-items:center ;
+  display: flex;
+  margin-left: 160px;
+
+
+
   }
 `
