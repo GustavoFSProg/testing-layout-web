@@ -170,7 +170,7 @@ export const IFrameContainer = styled.div`
     flex-direction: column;
     
   margin-left: -165px;
-  margin-top: 80px;
+  margin-top: 20px;
     align-items: center;
 display: flex;
   }
