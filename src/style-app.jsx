@@ -180,6 +180,7 @@ export const Imagem = styled.img`
   margin-top: 50px;
   width: 550px;
   height: 305px;
+  border-radius: 18px;
 
   @media screen and (max-width: 800px) {
     width: 300px;
