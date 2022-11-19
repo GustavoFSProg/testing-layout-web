@@ -195,19 +195,20 @@ export const AulaContainer = styled.div`
   justify-content: center;
 
   background: #f2f2f2;
-  border-radius: 10px;
+  border-radius: 15px;
   font-size: 16px;
   margin-top: 55px;
-  height: 300px;
+  height: 320px;
   width: 400px;
   margin-left: 20px;
   opacity: 0.9;
 
   @media screen and (max-width: 800px) {
     width: 275px;
-    height: 170px;
+    height: 340px;
     align-items: center;
     display: flex;
+
 
     margin-left: 160px;
   }
