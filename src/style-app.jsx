@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import Circulo from './assets/circulo.jpg'
+import Circulo from './assets/circulo-gray.jpg'
 
 export const ContainerAppBackgroundImage = styled.div`
   display: flex;
