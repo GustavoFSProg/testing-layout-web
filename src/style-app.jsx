@@ -16,6 +16,8 @@ export const ContainerAppBackgroundImage = styled.div`
   @media screen and (max-width: 800px) {
     padding-bottom: 9px;
     width: 100vw;
+    height: auto;
+
     background-size: contain;
     background: #99dfff;
 
@@ -168,7 +170,7 @@ export const IFrameContainer = styled.div`
     flex-direction: column;
     
   margin-left: -165px;
-  margin-top: 10px;
+  margin-top: 80px;
     align-items: center;
 display: flex;
   }
