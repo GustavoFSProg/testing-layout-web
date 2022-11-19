@@ -203,7 +203,7 @@ export const AulaContainer = styled.div`
   height: 320px;
   width: 400px;
   margin-left: 20px;
-  opacity: 0.6;
+  opacity: 0.7;
 
   @media screen and (max-width: 800px) {
     width: 275px;
