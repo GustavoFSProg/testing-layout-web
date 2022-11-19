@@ -168,7 +168,7 @@ export const IFrameContainer = styled.div`
     flex-direction: column;
     
   margin-left: -165px;
-  margin-top: -80px;
+  margin-top: 10px;
     align-items: center;
 display: flex;
   }
@@ -208,6 +208,7 @@ export const AulaContainer = styled.div`
     height: 340px;
     align-items: center;
     display: flex;
+    margin-bottom: 50px ;
 
 
     margin-left: 160px;
