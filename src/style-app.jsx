@@ -26,7 +26,7 @@ export const ContainerAppBackgroundImage = styled.div`
 
 export const ContainerApp = styled.div`
   display: flex;
-
+  flex-direction: column ;
   justify-content: center;
   width: 100%;
   height: 100%;
