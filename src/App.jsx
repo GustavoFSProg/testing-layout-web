@@ -37,7 +37,7 @@ function App() {
                 <HR></HR>
                 <h2 style={{ fontSize: '20px' }}>DÚVIDAS SOBRE O CURSO?</h2>
                 <span>Fale pelo Whatsapp</span>
-                <a href="https://api.whatsapp.com/send?phone=666666-666666-666666&text=Ol%C3%A1,%20tudo%20bem?%20Vim%20pelo%20site%20da%20Dank%20Idiomas!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento.">
+                <a href="https://api.whatsapp.com/send?phone=666666-666666-666666&text=Ol%C3%A1.">
 
                   <img width="80" src={whats} alt="whatsapp" />
                 </a>
